@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Orbital Guardian — Student Concept</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style> body{background:#00111a;color:#eef6ff}.card{background:rgba(2,6,23,0.7)}</style>
+</head>
+<body class="pt-20">
+
+  <nav class="fixed top-0 left-0 right-0 z-40 backdrop-blur bg-black/50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="font-bold text-lg">LEO: Student Project</div>
+      <ul class="flex gap-4 text-sm">
+        <li><a href="index.html" class="navlink">Home</a></li>
+        <li><a href="about.html" class="navlink">About</a></li>
+        <li><a href="tech.html" class="navlink">Tech</a></li>
+        <li><a href="challenges.html" class="navlink">Challenges</a></li>
+        <li><a href="roadmap.html" class="navlink">Roadmap</a></li>
+        <li><a href="guardian.html" class="navlink">Orbital Guardian</a></li>
+        <li><a href="references.html" class="navlink">References</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="max-w-5xl mx-auto px-6 py-12">
+    <h1 class="text-3xl font-bold mb-4">Orbital Guardian — a student modular hub</h1>
+
+    <p class="mb-4">Simple idea: a modular hub in LEO that focuses on safety and service. Each module has one job and can be launched separately.</p>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="card p-4" data-aos="fade-up">
+        <h3 class="font-semibold">Power Module</h3>
+        <p class="text-sm">Large solar panels + batteries. Supplies other modules with electricity through a standard power connector.</p>
+      </div>
+
+      <div class="card p-4" data-aos="fade-up" data-aos-delay="80">
+        <h3 class="font-semibold">Lab Module</h3>
+        <p class="text-sm">Small lab space for student experiments, microgravity tests, and sensors.</p>
+      </div>
+
+      <div class="card p-4" data-aos="fade-up" data-aos-delay="160">
+        <h3 class="font-semibold">Service / Refuel Module</h3>
+        <p class="text-sm">A docking port for small robots and refueling craft to extend life and perform repairs.</p>
+      </div>
+
+      <div class="card p-4" data-aos="fade-up" data-aos-delay="240">
+        <h3 class="font-semibold">Deorbit Module</h3>
+        <p class="text-sm">Carries a drag-sail or a small thruster package that attaches to retired modules to safely lower them to burn up in the atmosphere. This follows NASA’s deorbit ideas. :contentReference[oaicite:10]{index=10}</p>
+      </div>
+
+      <div class="card p-4" data-aos="fade-up">
+        <h3 class="font-semibold">AI & Control</h3>
+        <p class="text-sm">Onboard computer watches sensors and tells robots what to do if something breaks. Helps avoid collisions and manage power automatically.</p>
+      </div>
+
+      <div class="card p-4" data-aos="fade-up" data-aos-delay="80">
+        <h3 class="font-semibold">Standard Docking Port</h3>
+        <p class="text-sm">A simple, agreed connector (mechanical + electrical) that lets different craft attach to the hub safely.</p>
+      </div>
+    </div>
+
+    <section class="mt-8 card p-6">
+      <h2 class="font-semibold">How Orbital Guardian helps people on Earth</h2>
+      <ul class="list-disc pl-6 mt-2 text-sm">
+        <li>Better climate data from sensors in LEO → improved weather and disaster warnings.</li>
+        <li>Faster internet & communications when used as relay nodes.</li>
+        <li>New science and making special materials that can help medicine and technology.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({duration:800, once:true});
+    (function(){ document.querySelectorAll('.navlink').forEach(a => { if (a.getAttribute('href') === 'guardian.html') a.classList.add('active'); })})();
+  </script>
+</body>
+</html>

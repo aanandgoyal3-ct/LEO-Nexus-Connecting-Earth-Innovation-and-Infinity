@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Challenges & Risks</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style> body{background:#020617;color:#e8f1ff}.card{background:rgba(10,15,26,0.65)}</style>
+</head>
+<body class="pt-20">
+
+  <nav class="fixed top-0 left-0 right-0 z-40 backdrop-blur bg-black/50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="font-bold text-lg">LEO: Student Project</div>
+      <ul class="flex gap-4 text-sm">
+        <li><a href="index.html" class="navlink">Home</a></li>
+        <li><a href="about.html" class="navlink">About</a></li>
+        <li><a href="tech.html" class="navlink">Tech</a></li>
+        <li><a href="challenges.html" class="navlink">Challenges</a></li>
+        <li><a href="roadmap.html" class="navlink">Roadmap</a></li>
+        <li><a href="guardian.html" class="navlink">Guardian</a></li>
+        <li><a href="references.html" class="navlink">References</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="max-w-5xl mx-auto px-6 py-12">
+    <h1 class="text-3xl font-bold mb-4">Main Challenges and Practical Problems</h1>
+
+    <section class="grid md:grid-cols-2 gap-6">
+      <div class="card p-5" data-aos="fade-up">
+        <h2 class="font-semibold">Space debris (big problem)</h2>
+        <p class="text-sm">Many broken objects orbit Earth. If we do not remove or manage them, collisions make more debris. NASA studies and recommends ways to reduce and remove debris. :contentReference[oaicite:7]{index=7}</p>
+        <p class="text-xs mt-2 opacity-80">Student idea: show a small animation of "collision chain" to explain Kessler-like growth.</p>
+      </div>
+
+      <div class="card p-5" data-aos="fade-up" data-aos-delay="80">
+        <h2 class="font-semibold">Cost & business model</h2>
+        <p class="text-sm">Building and launching modules is expensive. NASA wants private companies to run stations so many customers can share costs. This is the commercial LEO idea. :contentReference[oaicite:8]{index=8}</p>
+      </div>
+
+      <div class="card p-5" data-aos="fade-up" data-aos-delay="160">
+        <h2 class="font-semibold">Regulation & coordination</h2>
+        <p class="text-sm">Many countries and companies must agree on radio rules, collision avoidance, and who pays for cleanup. This is hard but needed for safe space use.</p>
+      </div>
+
+      <div class="card p-5" data-aos="fade-up" data-aos-delay="240">
+        <h2 class="font-semibold">Power, thermal, and lifetime</h2>
+        <p class="text-sm">Radiation, hot-cold cycles, and micrometeoroids damage parts. Regular servicing can solve some of these but needs standard ports and trained robots.</p>
+      </div>
+    </section>
+
+    <section class="mt-8 card p-6">
+      <h2 class="font-semibold">How to reduce problems — simple steps</h2>
+      <ul class="list-disc pl-6 mt-2 text-sm">
+        <li>Design satellites to deorbit within 25 years, or add a small drag sail. (NASA guidance). :contentReference[oaicite:9]{index=9}</li>
+        <li>Use modular designs and in-orbit servicing to repair rather than discard hardware.</li>
+        <li>Share data between operators for collision avoidance (Space Traffic Management).</li>
+        <li>Encourage many small demonstrations first — cheaper testing lowers risk.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({duration:800, once:true});
+    (function(){ document.querySelectorAll('.navlink').forEach(a => { if (a.getAttribute('href') === 'challenges.html') a.classList.add('active'); })})();
+  </script>
+</body>
+</html>

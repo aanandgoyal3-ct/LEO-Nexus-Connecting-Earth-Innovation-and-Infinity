@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About LEO — What & Why</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style> body { background: linear-gradient(180deg,#00111a,#000); color:#f3f4f6 } .card{background:rgba(2,6,23,0.6);}</style>
+</head>
+<body class="pt-20">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 left-0 right-0 z-40 backdrop-blur bg-black/50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="font-bold text-lg">LEO: Student Project</div>
+      <ul class="flex gap-4 text-sm">
+        <li><a href="index.html" class="navlink">Home</a></li>
+        <li><a href="about.html" class="navlink">About LEO</a></li>
+        <li><a href="tech.html" class="navlink">Tech & Design</a></li>
+        <li><a href="challenges.html" class="navlink">Challenges</a></li>
+        <li><a href="roadmap.html" class="navlink">Roadmap</a></li>
+        <li><a href="guardian.html" class="navlink">Orbital Guardian</a></li>
+        <li><a href="references.html" class="navlink">References</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="max-w-5xl mx-auto px-6 py-12">
+    <h1 class="text-3xl font-bold mb-4" data-aos="fade-right">What is Low Earth Orbit (LEO)?</h1>
+    <p class="mb-4" data-aos="fade-up">
+      <strong>LEO</strong> means space that is close to Earth — roughly between 160 km and 2,000 km above us.
+      Because it is near, satellites in LEO are good for fast communications, detailed Earth pictures, science experiments in microgravity, and tests for future deeper space missions.
+    </p>
+
+    <section class="mt-6 grid md:grid-cols-2 gap-6">
+      <div class="card p-6" data-aos="zoom-in">
+        <h2 class="font-semibold text-xl mb-2">Why LEO matters</h2>
+        <ul class="list-disc pl-5 space-y-1 text-sm">
+          <li>Low delay for signals (good for internet and calls).</li>
+          <li>Cheaper and easier to reach than farther orbits.</li>
+          <li>Great place to test new technology before going to the Moon or Mars.</li>
+        </ul>
+      </div>
+
+      <div class="card p-6" data-aos="zoom-in" data-aos-delay="80">
+        <h2 class="font-semibold text-xl mb-2">NASA’s approach</h2>
+        <p class="text-sm">
+          NASA is moving from owning big stations like the ISS to buying services from private companies that build and run new stations.
+          This makes space research cheaper and lets many companies and countries join. (See NASA LEO Microgravity Strategy). :contentReference[oaicite:5]{index=5}
+        </p>
+      </div>
+    </section>
+
+    <section class="mt-8 card p-6" data-aos="fade-up">
+      <h2 class="font-semibold text-xl mb-2">How students can think about LEO</h2>
+      <p class="text-sm">
+        Imagine LEO like a busy sea of small islands (satellites and stations). Each island can host labs, relays for internet, or factories that make special materials in microgravity. Your student project — a modular hub — can plug into this sea and offer services to many users.
+      </p>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({duration:800, once:true});
+    (function(){ const links=document.querySelectorAll('.navlink'); links.forEach(a => { if (a.getAttribute('href') === 'about.html') a.classList.add('active'); })})();
+  </script>
+</body>
+</html>

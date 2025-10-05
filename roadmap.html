@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Roadmap — Phases</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style> body{background:linear-gradient(#001124,#000);color:#eaf2ff}.card{background:rgba(6,10,20,0.7)}</style>
+</head>
+<body class="pt-20">
+
+  <nav class="fixed top-0 left-0 right-0 z-40 backdrop-blur bg-black/50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="font-bold text-lg">LEO: Student Project</div>
+      <ul class="flex gap-4 text-sm">
+        <li><a href="index.html" class="navlink">Home</a></li>
+        <li><a href="about.html" class="navlink">About</a></li>
+        <li><a href="tech.html" class="navlink">Tech</a></li>
+        <li><a href="challenges.html" class="navlink">Challenges</a></li>
+        <li><a href="roadmap.html" class="navlink">Roadmap</a></li>
+        <li><a href="guardian.html" class="navlink">Guardian</a></li>
+        <li><a href="references.html" class="navlink">References</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="max-w-5xl mx-auto px-6 py-12">
+    <h1 class="text-3xl font-bold mb-4">Scalability Roadmap — How to move from idea to reality</h1>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="card p-5" data-aos="fade-up">
+        <h2 class="font-semibold">Phase 0 — Today (Demo)</h2>
+        <ul class="list-disc pl-5 text-sm">
+          <li>Use small satellites to test deorbit sails, docking ports and AI software.</li>
+          <li>Run student payloads and small experiments on existing platforms like ISS (or commercial labs).</li>
+        </ul>
+      </div>
+
+      <div class="card p-5" data-aos="fade-up" data-aos-delay="80">
+        <h2 class="font-semibold">Phase 1 — Prototype & Service</h2>
+        <ul class="list-disc pl-5 text-sm">
+          <li>Launch prototype modular modules and a servicing demonstration vehicle.</li>
+          <li>Test in-orbit refueling, swapping modules, and safe deorbit of parts.</li>
+        </ul>
+      </div>
+
+      <div class="card p-5" data-aos="fade-up" data-aos-delay="160">
+        <h2 class="font-semibold">Phase 2 — Commercial Operations</h2>
+        <ul class="list-disc pl-5 text-sm">
+          <li>Private stations host research, manufacturing, and tourism — NASA and others buy services.</li>
+          <li>Implement routine debris removal plans and service networks.</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="mt-8 card p-6">
+      <h2 class="font-semibold">How this improves present systems</h2>
+      <ul class="list-disc pl-6 mt-2 text-sm">
+        <li>Reduces long-term cost by sharing infrastructure with many customers.</li>
+        <li>Encourages faster tech development because private companies compete to build better modules.</li>
+        <li>Creates more jobs and research opportunities on Earth and in orbit.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({duration:800, once:true});
+    (function(){ document.querySelectorAll('.navlink').forEach(a => { if (a.getAttribute('href') === 'roadmap.html') a.classList.add('active'); })})();
+  </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Technology & Implementation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style> body{background:#000814;color:#e6eef8}.card{background:rgba(6,11,23,0.7)}</style>
+</head>
+<body class="pt-20">
+
+  <nav class="fixed top-0 left-0 right-0 z-40 backdrop-blur bg-black/50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="font-bold text-lg">LEO: Student Project</div>
+      <ul class="flex gap-4 text-sm">
+        <li><a href="index.html" class="navlink">Home</a></li>
+        <li><a href="about.html" class="navlink">About</a></li>
+        <li><a href="tech.html" class="navlink">Tech & Design</a></li>
+        <li><a href="challenges.html" class="navlink">Challenges</a></li>
+        <li><a href="roadmap.html" class="navlink">Roadmap</a></li>
+        <li><a href="guardian.html" class="navlink">Orbital Guardian</a></li>
+        <li><a href="references.html" class="navlink">References</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-6 py-12">
+    <h1 class="text-3xl font-bold mb-4">Key Technologies — Simple & Practical</h1>
+
+    <p class="mb-6">Below are technologies you can describe on the website and explain how they work in simple words.</p>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="card p-5" data-aos="fade-up">
+        <h2 class="font-semibold mb-2">Modular architecture</h2>
+        <p class="text-sm">Ship separate modules (power, lab, docking). Modules plug together like building blocks. If one part breaks, it can be swapped instead of throwing away the whole station.</p>
+        <p class="text-xs mt-2 opacity-80">Why it helps: cheaper long-term, easier upgrades.</p>
+      </div>
+
+      <div class="card p-5" data-aos="fade-up" data-aos-delay="80">
+        <h2 class="font-semibold mb-2">In-orbit servicing & refuel</h2>
+        <p class="text-sm">Robots or small ships dock with a module to repair, refuel, or replace parts. This increases lifetime and reduces waste.</p>
+        <p class="text-xs mt-2 opacity-80">Practical step: design standard docking ports for any servicing vehicle.</p>
+      </div>
+
+      <div class="card p-5" data-aos="fade-up" data-aos-delay="160">
+        <h2 class="font-semibold mb-2">Electric propulsion (efficient)</h2>
+        <p class="text-sm">Ion or Hall thrusters use little fuel but push for a long time — good for moving modules or changing orbit slowly. New fuels like iodine are compact for small vehicles.</p>
+      </div>
+
+      <div class="card p-5" data-aos="fade-up" data-aos-delay="240">
+        <h2 class="font-semibold mb-2">Deorbit & debris mitigation</h2>
+        <p class="text-sm">Systems like drag sails or small thrusters lower a dead satellite's orbit so it burns in the atmosphere. Active removal craft (concepts exist at NASA) can target big broken objects.</p>
+        <p class="text-xs mt-2 opacity-80">This follows NASA’s deorbit guidance (e.g., 25-year aim). :contentReference[oaicite:6]{index=6}</p>
+      </div>
+
+      <div class="card p-5" data-aos="fade-up">
+        <h2 class="font-semibold mb-2">Autonomy & AI for operations</h2>
+        <p class="text-sm">Onboard software checks health of systems and acts fast if a problem appears. This lowers ground cost and reaction time.</p>
+      </div>
+
+      <div class="card p-5" data-aos="fade-up" data-aos-delay="80">
+        <h2 class="font-semibold mb-2">Power: solar + storage</h2>
+        <p class="text-sm">Solar panels produce electricity; batteries store it. Good energy management shares power between modules and keeps instruments running at night.</p>
+      </div>
+    </div>
+
+    <section class="mt-8 card p-6">
+      <h2 class="font-semibold">How these connect (simple flow)</h2>
+      <ol class="list-decimal pl-6 mt-2">
+        <li>Launch modules to LEO → modules dock to form a hub.</li>
+        <li>Power module supplies electricity → labs & payloads run experiments.</li>
+        <li>Servicing ships dock to refuel/repair → increases lifetime.</li>
+        <li>When a part is retired, deorbit module safely removes it or attaches a drag sail.</li>
+      </ol>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({duration:800, once:true});
+    (function(){ const links=document.querySelectorAll('.navlink'); links.forEach(a => { if (a.getAttribute('href') === 'tech.html') a.classList.add('active'); })})();
+  </script>
+</body>
+</html>

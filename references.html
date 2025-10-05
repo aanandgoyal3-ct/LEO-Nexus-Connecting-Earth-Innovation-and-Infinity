@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>References — Official NASA Links</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style> body{background:#000;color:#eef6ff}.card{background:rgba(6,10,20,0.7)}</style>
+</head>
+<body class="pt-20">
+
+  <nav class="fixed top-0 left-0 right-0 z-40 backdrop-blur bg-black/50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="font-bold text-lg">LEO: Student Project</div>
+      <ul class="flex gap-4 text-sm">
+        <li><a href="index.html" class="navlink">Home</a></li>
+        <li><a href="about.html" class="navlink">About</a></li>
+        <li><a href="tech.html" class="navlink">Tech</a></li>
+        <li><a href="challenges.html" class="navlink">Challenges</a></li>
+        <li><a href="roadmap.html" class="navlink">Roadmap</a></li>
+        <li><a href="guardian.html" class="navlink">Guardian</a></li>
+        <li><a href="references.html" class="navlink">References</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="max-w-5xl mx-auto px-6 py-12">
+    <h1 class="text-3xl font-bold mb-6">Official NASA sources used</h1>
+
+    <div class="card p-6 mb-4">
+      <h2 class="font-semibold">LEO Microgravity Strategy</h2>
+      <p class="text-sm">NASA — LEO Microgravity Strategy (official). URL: <a class="underline text-cyan-300" href="https://www.nasa.gov/leomicrogravitystrategy/" target="_blank" rel="noopener">https://www.nasa.gov/leomicrogravitystrategy/</a></p>
+    </div>
+
+    <div class="card p-6 mb-4">
+      <h2 class="font-semibold">Commercial LEO & Commercial Destinations</h2>
+      <p class="text-sm">NASA — Commercial Destinations in Low Earth Orbit. URL: <a class="underline text-cyan-300" href="https://www.nasa.gov/humans-in-space/commercial-space/low-earth-orbit-economy/commercial-destinations-in-low-earth-orbit/" target="_blank">https://www.nasa.gov/...</a></p>
+    </div>
+
+    <div class="card p-6 mb-4">
+      <h2 class="font-semibold">Deorbit Systems & Debris Mitigation</h2>
+      <p class="text-sm">NASA — Deorbit systems & guidance (25-year guideline). URL: <a class="underline text-cyan-300" href="https://www.nasa.gov/smallsat-institute/sst-soa/deorbit-systems/" target="_blank">https://www.nasa.gov/...</a></p>
+    </div>
+
+    <div class="card p-6 mb-4">
+      <h2 class="font-semibold">Orbital Debris Program Office</h2>
+      <p class="text-sm">NASA ODPO — background on debris and remediation. URL: <a class="underline text-cyan-300" href="https://orbitaldebris.jsc.nasa.gov/" target="_blank">https://orbitaldebris.jsc.nasa.gov/</a></p>
+    </div>
+
+    <p class="text-xs mt-4 opacity-80">These pages were used to build the simple, student-level explanations and implementation ideas on this site. If you want direct quotes, I can insert short quoted lines from any of the pages.</p>
+  </main>
+
+  <script>
+    document.querySelectorAll('.navlink').forEach(a => { if (a.getAttribute('href') === 'references.html') a.classList.add('active'); });
+  </script>
+</body>
+</html>
